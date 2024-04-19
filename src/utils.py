@@ -38,12 +38,3 @@ class FileFinder:
                     print("Invalid choice. Please enter a number within the range.")
             except ValueError:
                 print("Invalid input. Please enter a number.")
-
-
-# Beispielaufruf der Klasse
-folder_path = "example_folder"
-file_finder = FileFinder(folder_path)
-files_in_directory = file_finder.find_files_in_directory()
-selected_file_path = file_finder.select_file_path(files_in_directory)
-if selected_file_path:
-    print(f"Selected file: {selected_file_path}")
