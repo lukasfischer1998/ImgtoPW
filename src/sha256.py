@@ -8,7 +8,7 @@ class HashSha256:
         try:
             with open(PathBin, 'r') as file:
                 for line in file:
-                    self.BinArray.append(line)
+                    self.BinArray.append(line.strip())  #strip \n
         except Exception as e:
             print(f"error occurred writing to file: {str(e)}")
 
@@ -51,3 +51,10 @@ class HashSha256:
         mask = (1 << width) - 1
         result = rotated_left & mask
         return result
+
+
+sha256 = HashSha256()
+sha256.getBinValues(
+    r"C:\Users\lukif\Desktop\PWImage\src\TempSafe\binaryval.txt")
+
+print(sha256.BinArray)
