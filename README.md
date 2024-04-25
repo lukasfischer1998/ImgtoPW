@@ -41,4 +41,4 @@ I've seen someone use something similiar so I went and tried to make my own vers
 ## Note
 
 If you would be willing to introduce another kind of algorithm to create a safe pw form a picture just go for a pull request and contribute.
-See ya Lukas.
+See ya Lukas
